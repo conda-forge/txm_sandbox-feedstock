@@ -1,18 +1,18 @@
 {% set name = "TXM_Sandbox" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/TXM_Sandbox-{{ version }}.tar.gz 
-  sha256: 60c728533283bad45b6fbb99f458d9fbd6e7e70421b9b4903255bcb36330c5a7 
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/TXM_Sandbox-{{ version }}.tar.gz
+  sha256: ca1b59e0c9e53664e6e3e1d0aa34e2b0ef9bb2bc2634fe5ff12b5795803b27a9
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -39,7 +39,7 @@ requirements:
     - scikit-learn
     - pystackreg
     - silx
-    - napari 
+    - napari
 
 test:
   imports:
@@ -50,15 +50,15 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Integrated Spectro-Imaging Analysis Toolbox'
+  summary: Integrated Spectro-Imaging Analysis Toolbox
 
   description: |
-          TXM_Sandbox is a GUI program based on Jupyter that integrates
-          tomography reconstruction and 2D/3D XANES data analysis. It 
-          provides a mechanism for users to accomendate different input
-          file formats.
-     
-  dev_url: https://github.com/xianghuix/TXM_Sandbox 
+    TXM_Sandbox is a GUI program based on Jupyter that integrates
+    tomography reconstruction and 2D/3D XANES data analysis. It 
+    provides a mechanism for users to accomendate different input
+    file formats.
+
+  dev_url: https://github.com/xianghuix/TXM_Sandbox
 
 extra:
   recipe-maintainers:
