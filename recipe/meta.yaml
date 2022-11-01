@@ -1,5 +1,5 @@
 {% set name = "TXM_Sandbox" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/TXM_Sandbox-{{ version }}.tar.gz 
-  sha256: 39fac6af93438081b5d94b0bc457536dab1907b8c2134d73995ef1554f113c89 
+  sha256:  f67f60f9eae4d42ae7ea0143ae3bba9d760ae20a3439e3cb816ba3b2229689d3
 
 build:
   noarch: python
