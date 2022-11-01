@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/TXM_Sandbox-{{ version }}.tar.gz 
-  sha256: 79285467ae87cced2e72aff1c817f167701e79de7ca32fb387b4ab8165d21e9b 
+  sha256:  f67f60f9eae4d42ae7ea0143ae3bba9d760ae20a3439e3cb816ba3b2229689d3
 
 build:
   noarch: python
