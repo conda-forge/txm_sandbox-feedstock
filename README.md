@@ -1,11 +1,11 @@
-About txm_sandbox
-=================
+About txm_sandbox-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/txm_sandbox-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/xianghuix/TXM_Sandbox
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/txm_sandbox-feedstock/blob/main/LICENSE.txt)
 
 Summary: Integrated Spectro-Imaging Analysis Toolbox
 
