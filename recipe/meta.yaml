@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{t}/{txm_sandbox}/{txm_sandbox}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/t/txm_sandbox/txm_sandbox-{{ version }}.tar.gz
   sha256: 020cbd2958fc69bd53e33c12e0ba1dc5ba1d56a239f73e5bfff582885399298e 
 
 build:
