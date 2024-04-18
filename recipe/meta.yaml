@@ -1,13 +1,13 @@
 {% set name = "TXM_Sandbox" %}
-{% set version = "0.2.5" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/TXM_Sandbox-{{ version }}.tar.gz
-  sha256: 57baeb65b4eaba79ae1c1940b79e77d7e741fced5ff1d8e777ac552e5ed2c54e
+  url: https://pypi.io/packages/source/t/txm_sandbox/txm_sandbox-{{ version }}.tar.gz
+  sha256: 020cbd2958fc69bd53e33c12e0ba1dc5ba1d56a239f73e5bfff582885399298e 
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.11
     - pip
   run:
-    - python >=3.8
+    - python >=3.11
     - openjdk =8
     - pyimagej
     - nodejs
@@ -27,7 +27,6 @@ requirements:
     - tomopy
     - h5py
     - tifffile
-    - imutils
     - opencv
     - openpyxl
     - pytables
