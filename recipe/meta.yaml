@@ -42,7 +42,7 @@ requirements:
 
 test:
   imports:
-    - TXM_Sandbox
+    - txm_sandbox
 
 about:
   home: https://github.com/xianghuix/TXM_Sandbox
