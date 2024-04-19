@@ -1,5 +1,5 @@
 {% set name = "txm_sandbox" %}
-{% set version = "0.3.0.post2" %}
+{% set version = "0.3.0.post3" %}
 
 package:
   name: {{ name|lower }}
