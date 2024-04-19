@@ -1,13 +1,13 @@
-{% set name = "TXM_Sandbox" %}
-{% set version = "0.3.0" %}
+{% set name = "txm_sandbox" %}
+{% set version = "0.3.0.post2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/t/txm_sandbox/txm_sandbox-{{ version }}.tar.gz
-  sha256: 020cbd2958fc69bd53e33c12e0ba1dc5ba1d56a239f73e5bfff582885399298e 
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e77c478f6a35300120e5ef2c8f396e0bdee7591f472b1f66df3a9f02ea67b1ac 
 
 build:
   noarch: python
@@ -42,7 +42,7 @@ requirements:
 
 test:
   imports:
-    - TXM_Sandbox
+    - txm_sandbox
 
 about:
   home: https://github.com/xianghuix/TXM_Sandbox
