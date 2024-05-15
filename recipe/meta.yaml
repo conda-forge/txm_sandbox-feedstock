@@ -1,5 +1,5 @@
 {% set name = "txm_sandbox" %}
-{% set version = "0.3.0.post7" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 628d84196245633937a797e83edafba101b13aab81085e95d5ef4bc050cdff7f 
+  sha256: a0d7bbc27b9f98c96d1e529041a542e66b473099bacdca41c9d34be3248b2d02
 
 build:
   noarch: python
@@ -62,3 +62,4 @@ about:
 extra:
   recipe-maintainers:
     - xianghuix
+
