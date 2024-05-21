@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 49ad7a905f779179c82016c83ce83180f196db1fc5e5ac2ba6456dba9aa82a76 
+  sha256: 49ad7a905f779179c82016c83ce83180f196db1fc5e5ac2ba6456dba9aa82a76
 
 build:
   noarch: python
@@ -62,4 +62,3 @@ about:
 extra:
   recipe-maintainers:
     - xianghuix
-
