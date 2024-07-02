@@ -1,5 +1,5 @@
 {% set name = "txm_sandbox" %}
-{% set version = "0.3.1.post7" %}
+{% set version = "0.3.1.post8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0a0038125bc94c76eec0bd364899090904d0a2ff46f8c882c64302cce69c89db 
+  sha256: 7f68b9b400822430a6e542adf8d2919902b3758a9d1d616c6d270c0cab1ff618 
 
 build:
   noarch: python
