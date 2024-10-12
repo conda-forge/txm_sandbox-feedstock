@@ -1,5 +1,5 @@
 {% set name = "txm_sandbox" %}
-{% set version = "0.3.1.post20" %}
+{% set version = "0.3.1.post21" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d378fcf3846b5cd4866a17e3922907787ba1ac87f5e0657b5580f7da458649ed 
+  sha256: 582e99c928fe76e54c5f6f1736e409ce401c6c0ae2694d76448500847b6f666c 
 
 build:
   noarch: python
@@ -18,9 +18,11 @@ requirements:
   host:
     - python >=3.11
     - pip
+    - setuptools
   run:
     - python >=3.11
     - openjdk =8
+    - scipy = 1.13  
     - pyimagej
     - nodejs
     - xarray
