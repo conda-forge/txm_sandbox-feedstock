@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.11
     - openjdk =8
-    - scipy = 1.13  
+    - scipy =1.13  
     - pyimagej
     - nodejs
     - xarray
