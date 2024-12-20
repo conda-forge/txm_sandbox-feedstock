@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f28c31c63ad62bfac66d9f8ee68bf9ee8386e02d724a17d1b5741b1965986f35 
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: f28c31c63ad62bfac66d9f8ee68bf9ee8386e02d724a17d1b5741b1965986f35
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.11
     - openjdk =8
-    - scipy =1.13 
+    - scipy =1.13
     - numpy =1.26
     - pyimagej
     - nodejs
