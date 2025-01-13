@@ -1,13 +1,13 @@
 {% set name = "txm_sandbox" %}
-{% set version = "0.3.1.post22" %}
+{% set version = "0.3.1.post23" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f28c31c63ad62bfac66d9f8ee68bf9ee8386e02d724a17d1b5741b1965986f35 
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: b021db953e3050a8e4df81a4bd72405aa160b7af6bc1138d895e664447e671b8 
 
 build:
   noarch: python
@@ -22,7 +22,8 @@ requirements:
   run:
     - python >=3.11
     - openjdk =8
-    - scipy = 1.13  
+    - scipy =1.13  
+    - numpy =1.26
     - pyimagej
     - nodejs
     - xarray
