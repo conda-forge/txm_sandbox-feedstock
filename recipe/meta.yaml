@@ -1,3 +1,4 @@
+{% set python_min = '3.11' %}
 {% set name = "txm_sandbox" %}
 {% set version = "0.3.1.post25" %}
 
@@ -11,16 +12,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.11
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.11
+    - python >={{ python_min }}
     - openjdk =8
     - scipy =1.13  
     - numpy =1.26
@@ -44,6 +45,8 @@ requirements:
     - napari
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - txm_sandbox
 
